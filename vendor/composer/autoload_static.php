@@ -11,8 +11,8 @@ class ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461
     );
 
     public static $classMap = array (
-        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'App\\Controllers\\TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\TasksController' => __DIR__ . '/../..' . '/app/controllers/TasksController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\DB' => __DIR__ . '/../..' . '/core/database/DB.php',
         'App\\Core\\Database\\Query' => __DIR__ . '/../..' . '/core/database/Query.php',
@@ -22,6 +22,7 @@ class ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Task' => __DIR__ . '/../..' . '/app/models/Task.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

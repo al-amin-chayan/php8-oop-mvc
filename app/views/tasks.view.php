@@ -1,6 +1,6 @@
 <?php 
 $title = 'Task List';
-include BASE_PATH . 'views/common/header.php';
+include BASE_PATH . 'app/views/common/header.php';
 ?>
 <ul>
 <?php foreach($tasks as $task): ?>
@@ -18,4 +18,4 @@ include BASE_PATH . 'views/common/header.php';
     <input type="text" name="description" placeholder="Description"/>
     <button type="submit" name="Save">Save</button>
 </form>
-<?php include BASE_PATH . 'views/common/footer.php' ?>
+<?php include BASE_PATH . 'app/views/common/footer.php' ?>

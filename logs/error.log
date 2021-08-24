@@ -920,3 +920,50 @@ Stack trace:
 #0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
 #1 {main}
   thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:15 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Warning:  include(route.php): Failed to open stream: No such file or directory in /home/chayan/Projects/php/school/core/Router.php on line 18PHP message: PHP Warning:  include(): Failed opening 'route.php' for inclusion (include_path='.:/usr/share/php') in /home/chayan/Projects/php/school/core/Router.php on line 18PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /tasks HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:16 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Warning:  include(route.php): Failed to open stream: No such file or directory in /home/chayan/Projects/php/school/core/Router.php on line 18PHP message: PHP Warning:  include(): Failed opening 'route.php' for inclusion (include_path='.:/usr/share/php') in /home/chayan/Projects/php/school/core/Router.php on line 18PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:36 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/home/chayan/Projects/php/school/views/tasks.view.php): Failed to open stream: No such file or directory in /home/chayan/Projects/php/school/core/functions.php on line 20PHP message: PHP Warning:  include(): Failed opening '/home/chayan/Projects/php/school/views/tasks.view.php' for inclusion (include_path='.:/usr/share/php') in /home/chayan/Projects/php/school/core/functions.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /tasks HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:37 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:56 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/home/chayan/Projects/php/school/views/common/header.php): Failed to open stream: No such file or directory in /home/chayan/Projects/php/school/app/views/tasks.view.php on line 3PHP message: PHP Warning:  include(): Failed opening '/home/chayan/Projects/php/school/views/common/header.php' for inclusion (include_path='.:/usr/share/php') in /home/chayan/Projects/php/school/app/views/tasks.view.php on line 3PHP message: PHP Warning:  include(/home/chayan/Projects/php/school/views/common/footer.php): Failed to open stream: No such file or directory in /home/chayan/Projects/php/school/app/views/tasks.view.php on line 21PHP message: PHP Warning:  include(): Failed opening '/home/chayan/Projects/php/school/views/common/footer.php' for inclusion (include_path='.:/usr/share/php') in /home/chayan/Projects/php/school/app/views/tasks.view.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /tasks HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:31:56 [error] 1097#1097: *200 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:33:25 [error] 1097#1097: *207 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"
+2021/08/24 21:33:27 [error] 1097#1097: *207 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/"
+2021/08/24 21:33:29 [error] 1097#1097: *207 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/about"
+2021/08/24 21:33:31 [error] 1097#1097: *207 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/contact"
+2021/08/24 21:33:32 [error] 1097#1097: *207 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: Route Not Exists in /home/chayan/Projects/php/school/core/Router.php:36
+Stack trace:
+#0 /home/chayan/Projects/php/school/index.php(12): App\Core\Router->direct()
+#1 {main}
+  thrown in /home/chayan/Projects/php/school/core/Router.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: school.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.0-fpm.sock:", host: "school.local", referrer: "http://school.local/tasks"

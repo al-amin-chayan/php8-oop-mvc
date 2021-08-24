@@ -24,5 +24,5 @@
 
     </head>
     <body>
-        <?php include BASE_PATH . 'views/common/nav.php' ?>
+        <?php include BASE_PATH . 'app/views/common/nav.php' ?>
         

@@ -17,7 +17,7 @@ if (!function_exists('view')) {
     {
         extract($data);
 
-        include BASE_PATH . "views/{$name}.view.php";
+        include BASE_PATH . "app/views/{$name}.view.php";
     }
 }
 
