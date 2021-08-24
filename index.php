@@ -1,8 +1,8 @@
 <?php
-
 include 'vendor/autoload.php';
 
 require 'core/bootstrap.php';
+
 
 define('BASE_PATH', __DIR__ . '/');
 
