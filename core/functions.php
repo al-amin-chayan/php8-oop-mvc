@@ -10,3 +10,13 @@ if (!function_exists('dd')) {
         die;
     }
 }
+
+if (!function_exists('view')) {
+    
+    function view(string $name, array $data = [])
+    {
+        extract($data);
+
+        include BASE_PATH . "views/{$name}.view.php";
+    }
+}

@@ -26,12 +26,28 @@ class Router {
         $this->routes['POST'][$uri] = $controller;
     }
 
-    public function direct(string $uri, string $requestMethod = 'GET'): string
+    public function direct(string $uri, string $requestMethod = 'GET')
     {
-        if (array_key_exists($uri, $this->routes[$requestMethod])) {
-            return $this->routes[$requestMethod][$uri];
+        if (! array_key_exists($uri, $this->routes[$requestMethod])) {
+            throw new Exception('Route Not Exists');
         }
 
-        throw new Exception('Route Not Exists');
+        return $this->callAction(
+            ...explode('@', $this->routes[$requestMethod][$uri])
+        );
+        
+    }
+
+    protected function callAction(string $controller, string $action)
+    {
+        $controller = new $controller;
+
+        if (! method_exists($controller, $action)) {
+            throw new Exception(
+                "{$controller} does not have any action {$action}"
+            );
+        }
+
+        return $controller->$action();
     }
 }

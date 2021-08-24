@@ -17,6 +17,7 @@ class ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461
         'Composer\\Autoload\\ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DB' => __DIR__ . '/../..' . '/core/database/DB.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'Query' => __DIR__ . '/../..' . '/core/database/Query.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
