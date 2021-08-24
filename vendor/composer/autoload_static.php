@@ -11,17 +11,17 @@ class ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461
     );
 
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/core/App.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
+        'App\\Controllers\\TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
+        'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
+        'App\\Core\\Database\\DB' => __DIR__ . '/../..' . '/core/database/DB.php',
+        'App\\Core\\Database\\Query' => __DIR__ . '/../..' . '/core/database/Query.php',
+        'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'ComposerAutoloaderInitdc4869c3ea808f6b33e81f7c6c034461' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitdc4869c3ea808f6b33e81f7c6c034461' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'DB' => __DIR__ . '/../..' . '/core/database/DB.php',
-        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'Query' => __DIR__ . '/../..' . '/core/database/Query.php',
-        'Request' => __DIR__ . '/../..' . '/core/Request.php',
-        'Router' => __DIR__ . '/../..' . '/core/Router.php',
-        'Task' => __DIR__ . '/../..' . '/Task.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

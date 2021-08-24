@@ -20,3 +20,12 @@ if (!function_exists('view')) {
         include BASE_PATH . "views/{$name}.view.php";
     }
 }
+
+if (!function_exists('redirect')) {
+    
+    function redirect(string $uri)
+    {
+        $uri = trim($uri, '/');
+        header("Location: /{$uri}");
+    }
+}

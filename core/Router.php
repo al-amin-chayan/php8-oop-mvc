@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Core;
+
+use Exception;
+
 class Router {
 
     protected array $routes = [
@@ -40,6 +44,7 @@ class Router {
 
     protected function callAction(string $controller, string $action)
     {
+        $controller = "App\\Controllers\\{$controller}";
         $controller = new $controller;
 
         if (! method_exists($controller, $action)) {
