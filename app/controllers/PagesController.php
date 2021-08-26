@@ -1,12 +1,22 @@
 <?php
 
 namespace App\Controllers;
-class PagesController {
 
+use App\Core\App;
+class PagesController {
 
     public function home()
     {
-        return view('index');
+        $articals = App::get('db')->select("articals");
+        return view('index', compact('articals'));
+    }
+
+    public function artical()
+    {
+        $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+        $artical = App::get('db')->find("articals", ['id' => $id]);
+        App::get('db')->update("articals", ['read_count' => $artical->read_count +1], ['id' => $id]);
+        return view('artical', compact('artical'));
     }
 
     public function about()

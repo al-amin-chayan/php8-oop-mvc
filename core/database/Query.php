@@ -43,6 +43,31 @@ class Query {
         return $sth->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function find(string $table, array $where = [], array $columns = [])
+    {
+        $columnNames = count($columns) > 0 ? implode(',', $columns) : '*';
+
+        // if (count($columns) > 0) {
+        //     $columnNames = implode(',', $columns);
+        // } else {
+        //     $columnNames = '*';
+        // }
+
+        $conditions = "";
+
+        foreach($where as $column => $value) {
+            $conditions .= strlen($conditions) > 0 ? " AND " : " WHERE ";
+            
+            $conditions .= "{$column} = $value";
+        }
+
+        $sql = "SELECT {$columnNames} FROM {$table} {$conditions} LIMIT 1";
+        $this->addToQueryLog($sql);
+        $sth = $this->db->prepare($sql);
+        $sth->execute();
+        return $sth->fetch(PDO::FETCH_OBJ);
+    }
+
     public function insert(string $table, array $values): bool
     { 
         $sql = "INSERT INTO {$table} (" . implode(', ', array_keys($values)) . ") VALUES (:" . implode(', :', array_keys($values)) . ")";
